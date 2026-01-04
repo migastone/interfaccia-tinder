@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>MigaMATCH</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              primary: '#0A66C2', // Professional Blue
+              accent: '#FFD700',  // Soft Gold
+              bg: '#F8F9FA',      // Off-white
+              text: {
+                dark: '#000000',
+                body: '#2D3748',
+                light: '#718096',
+              },
+              card: '#FFFFFF',
+            },
+            boxShadow: {
+              'soft': '0 4px 20px rgba(0, 0, 0, 0.08)',
+              'card': '0 2px 8px rgba(0, 0, 0, 0.05)',
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      body {
+        background-color: #f0f2f5;
+        font-family: 'Inter', sans-serif;
+        overscroll-behavior: none;
+      }
+      /* Hide scrollbar for clean mobile look */
+      .no-scrollbar::-webkit-scrollbar {
+        display: none;
+      }
+      .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "framer-motion": "https://esm.sh/framer-motion@^12.23.26"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
